@@ -14,12 +14,12 @@
 ?>
 <?php
 /**
- * @var   $block Magento\Framework\View\Element\Template
+ * @var \Magento\Catalog\Block\Product\View $block
+ * @var \Magento\Framework\Escaper  $escaper
  * @var \Devall\CustomerFeedback\ViewModel\FeedbackFormViewModel $viewModel
- * @var \Magento\Catalog\Block\Product\View $productViewBlock
  */
 $viewModel = $block->getData('viewModel');
-$productViewBlock = $block->getLayout()->getBlock('product.info');
+
 if ($viewModel->isFeedbackEnabled()): ?>
     <div id="feedback-section" data-bind="scope: 'feedbackComponent'">
         <!-- ko template: getTemplate() --><!-- /ko -->
@@ -31,7 +31,7 @@ if ($viewModel->isFeedbackEnabled()): ?>
                     "components": {
                         "feedbackComponent": {
                             "component": "Devall_CustomerFeedback/js/feedback-component",
-                            "productId": "<?= $block->escapeJs($productViewBlock->getProduct()->getId()) ?>"
+                            "productId": "<?= $escaper->escapeJs($block->getProduct()->getId()) ?>"
                     }
                 }
             }
