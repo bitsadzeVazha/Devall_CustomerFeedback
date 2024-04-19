@@ -1,5 +1,5 @@
 {
-    "name": "devall/customer-feedback",
+    "name": "developersalliance/customer-feedback",
     "description": "Customer Feedback extension for Magento 2 that allows customers to submit feedback on product pages.",
     "type": "magento2-module",
     "version": "1.0.0",
@@ -21,13 +21,5 @@
         "psr-4": {
             "Devall\\CustomerFeedback\\": ""
         }
-    },
-    "extra": {
-        "map": [
-            [
-                "*",
-                "Devall/CustomerFeedback"
-            ]
-        ]
     }
 }

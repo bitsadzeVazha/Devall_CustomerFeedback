@@ -24,8 +24,18 @@ class Collection extends AbstractCollection
      * The function is responsible for setting the model and resource model
      * information for the Feedback Collection.
      */
+
+    /**
+     * The primary key field name for the collection.
+     *
+     * This is used to specify the main identifier for the collection items and is
+     * crucial for database operations such as fetching and updating entities.
+     */
+    protected $_idFieldName = 'id';
+
     protected function _construct()
     {
         $this->_init(Feedback::class, FeedbackResource::class);
     }
 }
+
