@@ -28,7 +28,6 @@
             </storageConfig>
             <updateUrl path="mui/index/render"/>
         </settings>
-        <aclResource>Devall_CustomerFeedback::feedback_view</aclResource>
         <dataProvider name="customerfeedback_feedback_listing_data_source" class="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
             <settings>
                 <requestFieldName>id</requestFieldName>
