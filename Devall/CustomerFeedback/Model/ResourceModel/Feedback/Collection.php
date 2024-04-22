@@ -19,19 +19,19 @@ use Devall\CustomerFeedback\Model\ResourceModel\Feedback as FeedbackResource;
 class Collection extends AbstractCollection
 {
     /**
-     * Initialize Feedback Collection
-     *
-     * The function is responsible for setting the model and resource model
-     * information for the Feedback Collection.
-     */
-
-    /**
      * The primary key field name for the collection.
      *
      * This is used to specify the main identifier for the collection items and is
      * crucial for database operations such as fetching and updating entities.
      */
     protected $_idFieldName = 'id';
+
+    /**
+     * Initialize Feedback Collection
+     *
+     * The function is responsible for setting the model and resource model
+     * information for the Feedback Collection.
+     */
 
     protected function _construct()
     {
